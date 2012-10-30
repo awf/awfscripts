@@ -1,0 +1,32 @@
+<!-- 
+ ! Annotating sho_array classes for display in PowerShell
+-->
+
+<Types>
+ <Type>
+  <Name>ShoDoubleArray</Name>
+  <Members>
+    <MemberSet>
+      <Name>PsStandardMembers</Name>
+      <Members>
+        <PropertySet>
+          <Name>DefaultDisplayPropertySet</Name>
+          <ReferencedProperties>
+            <Name>Rows</Name>
+            <Name>Columns</Name>
+            <Name>S</Name>
+          </ReferencedProperties>
+        </PropertySet>
+        <NoteProperty>
+          <Name>DefaultDisplayProperty</Name>
+          <Value>S</Value>
+        </NoteProperty>
+      </Members>
+    </MemberSet>
+    <ScriptProperty>
+      <Name>S</Name>
+      <GetScriptBlock>$this.ToString()</GetScriptBlock>
+    </ScriptProperty>
+  </Members>
+ </Type>
+</Types>

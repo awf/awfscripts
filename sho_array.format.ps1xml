@@ -1,0 +1,32 @@
+<Configuration>
+    <ViewDefinitions>
+
+	<View>
+            <Name>ShoDoubleArray</Name>
+            <ViewSelectedBy>
+                <TypeName>ShoDoubleArray</TypeName>
+            </ViewSelectedBy>
+
+            <CustomControl>
+              <CustomEntries>
+                <CustomEntry>
+                  <CustomItem>
+                    <Frame>
+                      <LeftIndent>4</LeftIndent>
+                      <CustomItem>
+                        <ExpressionBinding>
+                          <ScriptBlock>
+                            sho_array_to_display_string($_)
+			  </ScriptBlock>
+                        </ExpressionBinding>
+                      </CustomItem>
+                    </Frame>
+                  </CustomItem>
+                </CustomEntry>
+              </CustomEntries>
+            </CustomControl>
+	</View>
+
+    </ViewDefinitions>
+</Configuration>
+
